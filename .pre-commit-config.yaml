@@ -1,0 +1,10 @@
+repos:
+- repo: https://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.74.1
+  hooks:
+    - id: terraform_fmt
+    - id: terraform_validate
+    - id: terraform_tflint
+    # Ignore tfsec ftm, enable again for a production ready module
+    #- id: terraform_tfsec
+    - id: terraform_docs
